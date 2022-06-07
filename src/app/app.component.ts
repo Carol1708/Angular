@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'primeiro-app';
+  contador: number = 1
+  simbolos: string[] = ['+', '-'] // declarando propriedades
+
+  incrementar(): void {
+    this.contador++
+  }
+
+  decrementar(): void{
+    this.contador--
+  }
+
+  adicionarValor(evento: Event): void{
+  }
+
 }
